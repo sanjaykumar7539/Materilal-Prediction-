@@ -1,0 +1,19 @@
+{
+  "id": "materials",
+  "name": "Material Science & Advanced Engineering",
+  "version": "1.3.0",
+  "description": "Offline materials intelligence with reviewed baselines and qualitative improvement analysis.",
+  "system_prompt_file": "SYSTEM_PROMPT.md",
+  "chat_template": "chatml",
+  "max_new_tokens_default": 1024,
+  "temperature_default": 0.3,
+  "top_p_default": 0.9,
+  "notes": [
+    "No external API calls. Engineering profiles use reviewed records; trained weights and request context are not verified measurements.",
+    "Apply parameter filtering: omit irrelevant properties; never use N/A fillers.",
+    "No hallucination: if data is missing, use the exact offline fallback sentence.",
+    "Feedback is locally persistent and unverified; review it before updating knowledge or training weights.",
+    "Bare names trigger eight-section intelligence reports; no engineering-property prediction model is installed.",
+    "66 parameters remain a filtered coverage taxonomy; representative grades are explicitly labelled and no empty values are printed."
+  ]
+}

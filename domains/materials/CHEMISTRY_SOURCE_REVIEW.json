@@ -1,0 +1,19 @@
+{
+  "review_date": "2026-10-08",
+  "primary_element_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/periodictable/JSON",
+  "primary_element_sha256": "ff0f75976583b8a6493b18d0b42e83e1b68bd6e112b45d33578d98494ed5d321",
+  "elements_cross_checked": 118,
+  "compounds": 20,
+  "properties_added": 256,
+  "knowledge_base_sha256": "64079302bdd94a3bbf8949b86a38175dfe89555c14489f3b180690ac8b5e8a66",
+  "total_records": 349,
+  "total_properties": 1837,
+  "limitations": [
+    "Identity fields only; no physical values from the PubChem export imported.",
+    "No blanket open-license claim for PubChem contributed physical-property data.",
+    "Aliases require element/compound prefixes to avoid silently substituting generic identities for alloy grades.",
+    "ChEBI formula data is CC BY 4.0; source IDs and original notation retained."
+  ],
+  "verified_properties": 959,
+  "unverified_element_properties": 878
+}

@@ -1,0 +1,24 @@
+{
+  "model": {
+    "vocab_size": 32000,
+    "dim": 1024,
+    "n_layers": 24,
+    "n_heads": 16,
+    "n_kv_heads": 4,
+    "ffn_hidden": 2816,
+    "max_seq_len": 8192,
+    "rope_theta": 100000.0
+  },
+  "training": {
+    "micro_batch_size": 1,
+    "gradient_accumulation": 32,
+    "amp": "bf16",
+    "gradient_checkpointing": true,
+    "max_grad_norm": 1.0,
+    "checkpoint_every": 1000
+  },
+  "data": {
+    "token_shard_size": 5000000,
+    "dtype": "uint32"
+  }
+}

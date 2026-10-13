@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "campusmind-ownllm"
+version = "1.1.2"
+description = "Offline-first from-scratch decoder-only LLM foundation with domain system prompts"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.3",
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.7",
+  "tokenizers>=0.19",
+  "numpy>=1.26",
+  "redis>=5.0",
+  "orjson>=3.10",
+  "safetensors>=0.4",
+  "pypdf>=5.0",
+  "fonttools>=4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "pre-commit>=3.8", "httpx>=0.27"]
+ui = ["gradio>=5"]
+onnx = ["onnx>=1.16", "onnxruntime>=1.19"]
+drive = ["requests>=2.31"]
+
+[project.scripts]
+ownllm-infer = "ownllm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

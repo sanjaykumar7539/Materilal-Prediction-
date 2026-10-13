@@ -1,0 +1,2 @@
+[console_scripts]
+ownllm-infer = ownllm.cli:main

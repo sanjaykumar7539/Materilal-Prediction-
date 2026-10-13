@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Models / datasets / runs
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+*.onnx
+checkpoints/
+runs/
+data/
+artifacts/
+wandb/
+
+# IDE / OS
+node_modules/
+frontend/dist/
+.tools/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.pem
+*.key
+.venv/
+__pycache__/
+*.pyc
+.env
+*.safetensors
+*.gguf
+*.bin
+checkpoints/
+logs/

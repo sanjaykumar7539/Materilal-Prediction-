@@ -1,0 +1,37 @@
+services:
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  ownllm:
+    build: .
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      HOST: "0.0.0.0"
+      PORT: "8000"
+      OWNLLM_MODEL_PATH: /models/ownllm.pt
+      TOKENIZER_PATH: /models/tokenizer.json
+      OWNLLM_DOMAINS_DIR: /app/domains
+      # Redis is local to this Compose network. Enable this only with OWNLLM_OFFLINE=1.
+      OWNLLM_OFFLINE_ALLOW_PRIVATE: "1"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/models:ro
+      - ./data:/data
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  redis_data:

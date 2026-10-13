@@ -1,0 +1,59 @@
+{
+  "review_date": "2026-10-09",
+  "knowledge_base_sha256": "64079302bdd94a3bbf8949b86a38175dfe89555c14489f3b180690ac8b5e8a66",
+  "total_records": 349,
+  "total_properties": 1837,
+  "verified_properties": 959,
+  "unverified_element_properties": 878,
+  "books": [
+    {
+      "title": "Chemistry",
+      "url": "https://assets.openstax.org/oscms-prodcms/media/documents/Chemistry-LR.pdf",
+      "attribution_url": "https://openstax.org/details/books/chemistry",
+      "license": "CC BY 4.0",
+      "authors": "Paul Flowers, Klaus Theopold, Richard Langley and William R. Robinson; OpenStax/Rice University",
+      "sha256": "aa56e10ea6468b9779d6e4524cf256fd7865c29b4f9ba9e5de15c4e669748f87",
+      "pages": 1355,
+      "license_evidence": "Creative Commons Attribution 4.0 International License (CC BY 4.0). Under this license, any user of this textb ook or the textbook contents herein must provide proper attribution as follows: - If you redistribute this textbook in a digital format (i ncluding b"
+    },
+    {
+      "title": "Chemistry: Atoms First",
+      "url": "https://d3bxy9euw4e147.cloudfront.net/oscms-prodcms/media/documents/ChemistryAtomsFirst-LR.pdf",
+      "attribution_url": "https://openstax.org/details/books/chemistry-atoms-first",
+      "license": "CC BY 4.0",
+      "authors": "Edward J. Neth, Paul Flowers, Klaus Theopold, Richard Langley and William R. Robinson; OpenStax/Rice University",
+      "sha256": "12b04c10cd52e65e6c3d0554223ebbf6367386cf93fa5fd0e0e25523e1d65dbe",
+      "pages": 1357,
+      "license_evidence": "Creative Commons Attribution 4.0 International License (CC BY 4.0). Under this license, any user of this textb ook or the textbook contents herein must provide proper attribution as follows: - If you redistribute this textbook in a digital format (i ncluding b"
+    }
+  ],
+  "sources": {
+    "chebi_terms_0.json": "2df9e771d7b73577e69ab0fa367f94874751bebeb70a09b704a6a25d2bfe3186",
+    "chebi_terms_1.json": "494940161ea2704e0899ddbb38eb928bbc886875923831fca9eb62168052456c",
+    "chebi_terms_10.json": "95927185e47c3b2522c1beac87a5a600b52a17a47377596072cc81f5225049f6",
+    "chebi_terms_11.json": "6069a6742f5947923853a92354942af5e7bff5f2752b40c05e38e81e3012a13c",
+    "chebi_terms_12.json": "9449463e2b8fdb3e960c6fafadee8a2ac039f0298f0e951ab2be6743a9805292",
+    "chebi_terms_13.json": "7216c6d89dd5f6f10d6ab61b5982f93da5d2052c3cc09c6d06b1610aa49bebf4",
+    "chebi_terms_14.json": "5fa040a6eefa6fa684430ff386b48d65b61226bde849583387ab1bc1ca194d86",
+    "chebi_terms_15.json": "89537953263922560031dea5c406b1db6ba86571f2d91d862658cb8f2d664d3f",
+    "chebi_terms_16.json": "e665cd79d1e920bc6c892669d6d418b8bba07d82f8763a313dc097e0f10286c7",
+    "chebi_terms_2.json": "09e0dcb6d0e4df9b9bc21c813e1cbfc2f0398334abe0e4ba8b8efce0c9614576",
+    "chebi_terms_3.json": "0b7bf41b431473b2a7b02f05e853df0c03ed94f8681441c7376cbdf83f359cf4",
+    "chebi_terms_4.json": "1ba84bcef303a03a9f144344d3a87301ef2dd00ca9f1eec0f256c8b8ab6466cb",
+    "chebi_terms_5.json": "7d5dac52c8f951b8f2c78c1b50a6b5db77687d6458546f17cdd617697e456e54",
+    "chebi_terms_6.json": "ccce7ce01ae22ddcc434b6c97c00a10bbeac184ac95215c55e4b504425b74260",
+    "chebi_terms_7.json": "af9de97403d4fe732fa6ca2d804364f0cb5351844f2d575b8c3bc3737922730c",
+    "chebi_terms_8.json": "673c846e12f568e478137d11d30bb6779262b9d8c295b69697658e70e6087fa1",
+    "chebi_terms_9.json": "74c39419566c5674d6297d8144fb21b403516e51258cca159f353592621977e6",
+    "Chemistry-LR.pdf": "aa56e10ea6468b9779d6e4524cf256fd7865c29b4f9ba9e5de15c4e669748f87",
+    "ChemistryAtomsFirst-LR.pdf": "12b04c10cd52e65e6c3d0554223ebbf6367386cf93fa5fd0e0e25523e1d65dbe"
+  },
+  "method": "Elemental values staged unverified. Compound fields compared with curated ChEBI annotations; calculated mass explicitly distinguished from physical measurement.",
+  "limitations": [
+    "Element physical values are source-aggregated, not independently verified; heavy-element measurement/confirmation status explicitly labelled unconfirmed rather than fabricated as experimental or computed.",
+    "Compound mass is calculated; formula and charge are identity data, not measured engineering performance.",
+    "Book index separates keyword occurrences from general background; not all elements have dedicated discussion or books.",
+    "Chapter splits within related textbooks can share underlying facts; no independent-book generalization claim.",
+    "A bounded subset of up to 200 compounds is not all known compounds."
+  ]
+}

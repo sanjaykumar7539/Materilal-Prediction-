@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "cda": {
+      "title": "Copper Development Association: Conductivity of Specialty Alloys",
+      "url": "https://www.copper.org/applications/industrial/DesignGuide/selection/conductspec02.php",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "cucrzr": {
+      "title": "Copper Information Center: Copper-chromium-zirconium CuCr1Zr",
+      "url": "https://help.copper.fyi/hc/en-us/articles/360021212740-Copper-chromium-zirconium-CuCr1Zr",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "glass": {
+      "title": "Pilkington Toughened Glass",
+      "url": "https://www.pilkington.com/en/zz/products/product-categories/safety-security/pilkington-toughened-glass",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "laminated": {
+      "title": "Pilkington Glass FAQs: toughened versus laminated glass",
+      "url": "https://my.pilkington.com/en/knowledge-base/helpandadvice/faqs/glass-faqs",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "hydro": {
+      "title": "Hydro Alloy 6061 datasheet",
+      "url": "https://www.hydro.com/Document/Index?id=560718&name=Alloy+6061.pdf",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "heat": {
+      "title": "TWI Heat Treatment Services",
+      "url": "https://www.twi-global.com/what-we-do/services-and-support/manufacturing-production-support/heat-treatment",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "zinc": {
+      "title": "American Galvanizers Association: Corrosion Protection for Steel",
+      "url": "https://galvanizeit.org/hot-dip-galvanizing/why-specify-galvanizing/corrosion-protection",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "titanium": {
+      "title": "TIMET Designing with Titanium",
+      "url": "https://www.timet.com/assets/local/documents/technicalmanuals/DesignandFabrication.pdf",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "galling": {
+      "title": "ORNL: High-Temperature Galling Characteristics of Ti-6Al-4V with and without Surface Treatments",
+      "url": "https://www.ornl.gov/publications/high-temperature-galling-characteristics-of-ti-6al-4v-with-and-without-surface-treatments/",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    },
+    "fretting": {
+      "title": "NASA: Wear Behavior of TiC/Ti-6Al-4V with solid-film lubricant counterparts",
+      "url": "https://ntrs.nasa.gov/citations/20070012401",
+      "review_date": "2026-10-12",
+      "use": "Manually reviewed factual synopsis; no full article copied; not imported into training weights."
+    }
+  },
+  "materials": {
+    "Copper": {
+      "aliases": [
+        "copper"
+      ],
+      "baseline": "Copper (generic reference)",
+      "overview": "Copper is used where electrical and thermal transport are important. Pure copper and precipitation-hardened copper alloys serve different strength and conductivity requirements.",
+      "weaknesses": "Pure copper has limited hardness for demanding contacts. Greater alloy strength often costs conductivity.",
+      "candidates": [
+        {
+          "name": "Cu-Cr-Zr alloy with controlled ageing",
+          "change": "Select a specified Cu-Cr-Zr grade and qualified precipitation-hardening treatment.",
+          "benefit": "Higher strength and hardness than unalloyed copper while retaining useful conductivity.",
+          "tradeoff": "Conductivity is sacrificed for strength; an unsuitable temper may miss the intended balance.",
+          "mechanism": "Precipitation strengthening supports a better strength/conductivity compromise than leaving all solute in solution.",
+          "conditions": "Grade, product form and ageing condition must be fixed before comparison. No alloy percentages or treatment schedule are prescribed.",
+          "objectives": [
+            "strength",
+            "thermal",
+            "conductivity",
+            "durability"
+          ],
+          "sources": [
+            "cucrzr",
+            "cda"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Precipitation-hardened Cu-Ni-Si",
+          "change": "Evaluate a specified nickel-silicon copper alloy for connector service.",
+          "benefit": "Strength and elevated-temperature stability may improve.",
+          "tradeoff": "Electrical conductivity must be checked against the conductor requirement.",
+          "mechanism": "Ageing reduces nickel remaining in solid solution while developing strengthening precipitates.",
+          "conditions": "Connector geometry, temper and operating temperature must match the qualification specimens.",
+          "objectives": [
+            "strength",
+            "thermal"
+          ],
+          "sources": [
+            "cda"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Compare tensile strength, hardness and electrical conductivity on matching product forms and tempers; add thermal cycling for elevated-temperature service.",
+      "sources": [
+        "cda",
+        "cucrzr"
+      ],
+      "reviewed": true
+    },
+    "Glass": {
+      "aliases": [
+        "glass"
+      ],
+      "baseline": "Glass (generic reference)",
+      "overview": "Glass performance depends on composition, surface condition and product construction. Annealed, toughened and laminated glass are distinct options for glazing.",
+      "weaknesses": "Mechanical or thermal stress can cause breakage. Fragmentation, edge condition and post-breakage behavior matter.",
+      "candidates": [
+        {
+          "name": "Thermally toughened glass",
+          "change": "Use a qualified toughening process on a suitable glass product.",
+          "benefit": "Greater resistance to mechanical and thermal stresses than its annealed counterpart.",
+          "tradeoff": "Failure can still occur; fragmentation and spontaneous-breakage requirements need checking.",
+          "mechanism": "Surface compression makes tensile crack opening more difficult.",
+          "conditions": "Final pane size, edgework, glass type and installation matter. Thermal-stress resistance does not establish a fire rating.",
+          "objectives": [
+            "strength",
+            "thermal",
+            "durability"
+          ],
+          "sources": [
+            "glass"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Laminated glass with a compatible interlayer",
+          "change": "Combine glass plies using a specified polymer interlayer.",
+          "benefit": "Improved fragment retention after breakage.",
+          "tradeoff": "Lamination alone does not imply higher glass strength; interlayer and assembly performance need qualification.",
+          "mechanism": "The bonded interlayer retains fragments and provides post-breakage integrity.",
+          "conditions": "Select pane and interlayer construction for service temperature and loading; validate the complete assembly.",
+          "objectives": [
+            "safety",
+            "durability"
+          ],
+          "sources": [
+            "laminated"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Test bending or impact performance, edge quality, thermal stress and post-breakage behavior on the actual assembly. Fire performance needs a separate relevant test.",
+      "sources": [
+        "glass",
+        "laminated"
+      ],
+      "reviewed": true
+    },
+    "Aluminium": {
+      "aliases": [
+        "aluminium",
+        "aluminum"
+      ],
+      "baseline": "Aluminium (generic reference)",
+      "overview": "Aluminium includes many alloys and tempers. Heat-treatable 6061 is a structural option; product form, temper, joining and finish must be specified.",
+      "weaknesses": "A welded heat-treated product can lose strength near the joint; dissimilar-metal contact can introduce corrosion concerns.",
+      "candidates": [
+        {
+          "name": "Specified 6061 alloy and temper",
+          "change": "Evaluate a qualified heat-treated 6061 product where greater structural strength is needed.",
+          "benefit": "A practical structural option with useful corrosion resistance and joining characteristics.",
+          "tradeoff": "Welding can reduce strength locally in the T6 condition; dissimilar-metal contact needs assessment.",
+          "mechanism": "A controlled temper in a heat-treatable alloy changes the strengthening microstructure.",
+          "conditions": "This is a grade substitution, not a recipe for adding arbitrary elements to an unknown aluminium product.",
+          "objectives": [
+            "strength",
+            "durability"
+          ],
+          "sources": [
+            "hydro"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Anodized 6061 surface",
+          "change": "Evaluate an anodizing finish on a suitable 6061 product.",
+          "benefit": "A finish option where surface requirements matter.",
+          "tradeoff": "Cosmetic appearance may favor 6063; bulk strength is not established by the finish.",
+          "mechanism": "Anodizing modifies the oxide surface rather than the alloy bulk.",
+          "conditions": "Choose finish requirements and inspect the finished product; no coating thickness or performance increase is predicted.",
+          "objectives": [
+            "corrosion",
+            "durability"
+          ],
+          "sources": [
+            "hydro"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Compare grade/temper-specific tensile properties, including the welded region, and qualify the chosen surface finish in the actual environment.",
+      "sources": [
+        "hydro"
+      ],
+      "reviewed": true
+    },
+    "Iron": {
+      "aliases": [
+        "iron"
+      ],
+      "baseline": "Iron (generic reference)",
+      "overview": "Iron is the base element of steels. Pure iron, carbon steels and alloy steels are different materials; adding a steel treatment does not establish the response of pure iron.",
+      "weaknesses": "A generic iron record does not specify a hardenable steel. Corrosion protection and mechanical improvement require different choices.",
+      "candidates": [
+        {
+          "name": "Compatible zinc coating",
+          "change": "Evaluate a qualified zinc-coating system for a suitable iron or steel part.",
+          "benefit": "Improved corrosion protection in a compatible service environment.",
+          "tradeoff": "The coating is consumed during protection and does not establish higher bulk strength.",
+          "mechanism": "Zinc provides a barrier and can corrode preferentially to protect exposed steel.",
+          "conditions": "Confirm substrate suitability, coating process, geometry and actual exposure; no corrosion rate or lifetime is inferred.",
+          "objectives": [
+            "corrosion",
+            "durability"
+          ],
+          "sources": [
+            "zinc"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Qualified hardenable steel and tempering route",
+          "change": "For strength or wear objectives, select a suitable steel grade before specifying quenching and tempering.",
+          "benefit": "A hardness/toughness balance can be tailored in a suitable grade.",
+          "tradeoff": "Tempering reduces hardness and tensile strength relative to the quenched state while improving ductility and toughness.",
+          "mechanism": "Heat treatment changes the microstructure; the hardening response depends on composition.",
+          "conditions": "Do not transfer a hardening cycle to pure iron, unidentified steel, or austenitic stainless steel.",
+          "objectives": [
+            "strength",
+            "wear"
+          ],
+          "sources": [
+            "heat"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Establish composition and current microstructure first. Test mechanical properties after processing and corrosion behavior under the intended exposure.",
+      "sources": [
+        "heat",
+        "zinc"
+      ],
+      "reviewed": true
+    },
+    "Steel": {
+      "aliases": [
+        "steel"
+      ],
+      "baseline": null,
+      "overview": "Steel covers a family of iron-based alloys. Carbon content, alloying, heat treatment and product form determine which strengthening and protection routes are applicable.",
+      "weaknesses": "A family name does not specify a baseline strength, corrosion rate or heat-treatment response. No particular steel grade is assumed.",
+      "candidates": [
+        {
+          "name": "Compatible zinc coating",
+          "change": "Evaluate a qualified zinc-coating system for a suitable iron or steel part.",
+          "benefit": "Improved corrosion protection in a compatible service environment.",
+          "tradeoff": "The coating is consumed during protection and does not establish higher bulk strength.",
+          "mechanism": "Zinc provides a barrier and can corrode preferentially to protect exposed steel.",
+          "conditions": "Confirm substrate suitability, coating process, geometry and actual exposure; no corrosion rate or lifetime is inferred.",
+          "objectives": [
+            "corrosion",
+            "durability"
+          ],
+          "sources": [
+            "zinc"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Qualified hardenable steel and tempering route",
+          "change": "For strength or wear objectives, select a suitable steel grade before specifying quenching and tempering.",
+          "benefit": "A hardness/toughness balance can be tailored in a suitable grade.",
+          "tradeoff": "Tempering reduces hardness and tensile strength relative to the quenched state while improving ductility and toughness.",
+          "mechanism": "Heat treatment changes the microstructure; the hardening response depends on composition.",
+          "conditions": "Do not transfer a hardening cycle to pure iron, unidentified steel, or austenitic stainless steel.",
+          "objectives": [
+            "strength",
+            "wear"
+          ],
+          "sources": [
+            "heat"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Identify grade and delivery condition. Check hardness, tensile and impact behavior after processing, plus the actual corrosion environment.",
+      "sources": [
+        "heat",
+        "zinc"
+      ],
+      "reviewed": true,
+      "representatives": [
+        {
+          "grade": "304 stainless steel",
+          "reason": "A reviewed austenitic stainless example from the local manufacturer records."
+        },
+        {
+          "grade": "441 stainless steel",
+          "reason": "A reviewed ferritic stainless example to show a different steel class; neither example represents all carbon or alloy steels."
+        }
+      ]
+    },
+    "Titanium": {
+      "aliases": [
+        "titanium"
+      ],
+      "baseline": "Titanium (element)",
+      "overview": "Commercially pure titanium and titanium alloys require grade-specific design. Surface wear problems and bulk structural requirements must be evaluated separately.",
+      "weaknesses": "Galling and wear can control sliding-contact performance. Results for Ti-6Al-4V cannot automatically be assigned to commercially pure titanium.",
+      "candidates": [
+        {
+          "name": "Qualified surface treatment on Ti-6Al-4V",
+          "change": "Investigate an oxygen-diffusion treatment for a specified Ti-6Al-4V wear contact.",
+          "benefit": "A literature-supported route to investigate galling resistance.",
+          "tradeoff": "Surface-treatment results cannot be generalized to every titanium grade or contact.",
+          "mechanism": "A modified surface layer changes the contact response; substrate and treatment conditions remain important.",
+          "conditions": "The cited study concerns Ti-6Al-4V and high-temperature galling, not all commercially pure titanium applications.",
+          "objectives": [
+            "wear",
+            "durability"
+          ],
+          "sources": [
+            "galling"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        },
+        {
+          "name": "Compatible solid-film lubricant and counterface",
+          "change": "Screen a qualified lubricated contact pair when fretting or galling dominates.",
+          "benefit": "Potential reduction of damaging adhesive contact under an appropriate test regime.",
+          "tradeoff": "Coating durability and transfer to the intended contact remain unverified.",
+          "mechanism": "The surface film changes interfacial contact rather than proving greater bulk strength.",
+          "conditions": "NASA evidence concerns TiC/Ti-6Al-4V pins and specific coated counterparts. Treat transfer to another titanium system as an engineering hypothesis.",
+          "objectives": [
+            "wear"
+          ],
+          "sources": [
+            "fretting"
+          ],
+          "evidence_kind": "literature-supported qualitative option",
+          "reviewed": true
+        }
+      ],
+      "validation": "Specify grade, counterface, contact stress, temperature and lubricant; perform a representative wear/galling test and inspect surface integrity.",
+      "sources": [
+        "titanium",
+        "galling",
+        "fretting"
+      ],
+      "reviewed": true
+    }
+  }
+}

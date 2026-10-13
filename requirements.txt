@@ -1,0 +1,11 @@
+torch>=2.3
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+tokenizers>=0.19
+numpy>=1.26
+redis>=5.0
+orjson>=3.10
+safetensors>=0.4
+pypdf>=5.0
+fonttools>=4.0

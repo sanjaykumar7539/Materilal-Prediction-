@@ -1,0 +1,15 @@
+{
+  "review_date": "2026-10-08",
+  "source_url": "https://www.outokumpu.com/en/products/product-ranges/-/media/files/products/core/outokumpu-core-range-datasheet.pdf",
+  "publisher": "Outokumpu",
+  "records": 14,
+  "properties": 94,
+  "knowledge_base_sha256": "64079302bdd94a3bbf8949b86a38175dfe89555c14489f3b180690ac8b5e8a66",
+  "method": "Compared source Tables 5 and 7 with transcribed values, units, exact EN grade and product/temperature conditions.",
+  "limitations": [
+    "Manufacturer reference/specification data are not batch certificates or design allowables.",
+    "No open license is asserted; source attribution preserved, no bulk training corpus or external upload created.",
+    "General 304L alias refers explicitly to EN 1.4307; other 304L variants need their own records.",
+    "No historical facts or unsupported properties were invented."
+  ]
+}

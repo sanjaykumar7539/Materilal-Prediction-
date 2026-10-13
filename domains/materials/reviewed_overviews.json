@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "materials": {
+    "Water (compound)": {
+      "text": "Water has the formula H2O: each molecule contains one oxygen atom bonded to two hydrogen atoms. In its pure liquid form it is almost colourless, with no noticeable smell or taste. It occurs in rivers, lakes and oceans and is essential to living organisms. Its molecules are polar and form hydrogen bonds with one another; these interactions help explain many of its unusual physical properties. Water dissolves a wide range of substances, making it important for biological processes, washing and chemical processing. It is also widely used to transfer heat in heating and cooling systems. Depending on the surrounding temperature and pressure, it can exist as ice, liquid water or water vapour.",
+      "reviewed": true,
+      "source": "User-provided ChEBI water screenshot, Wikipedia excerpt; Wikipedia contributors, Water, introduction; ChEBI CHEBI:15377 definition.",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Water",
+        "https://www.ebi.ac.uk/chebi/CHEBI:15377"
+      ],
+      "review_date": "2026-10-12",
+      "license": "Wikipedia text: CC BY-SA 4.0; ChEBI: CC BY 4.0",
+      "changes": "Concise paraphrase; explanatory overview only. No numerical engineering properties promoted from Wikipedia."
+    }
+  }
+}

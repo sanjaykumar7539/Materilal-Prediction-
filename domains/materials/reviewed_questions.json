@@ -1,0 +1,18 @@
+{
+  "questions": [
+    {
+      "reviewed": true,
+      "review_date": "2026-10-12",
+      "source_url": "https://www.outokumpu.com/en/expertise/stainless-basics/corrosion-resistance",
+      "source_title": "Outokumpu: What makes stainless steel corrosion resistant?",
+      "use": "Original factual synopsis for local reference; no full article or training import.",
+      "questions": [
+        "Why does chromium improve corrosion resistance in steel?",
+        "Why does chromium improve corrosion resistance?",
+        "Why is stainless steel corrosion resistant?",
+        "How does chromium protect stainless steel?"
+      ],
+      "answer": "Chromium enables stainless steel to form a thin passive surface film in oxidizing environments. That film limits corrosion reactions at the underlying metal. Protection depends on the alloy and exposure: aggressive conditions can break down the film and cause localized or uniform corrosion. Chromium therefore does not make every steel immune to corrosion, and this mechanism alone does not establish a corrosion rate or service life."
+    }
+  ]
+}
